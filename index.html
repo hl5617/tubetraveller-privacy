@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Tube Traveller</title>
+    <style>
+        :root {
+            --primary-color: #202124;
+            --secondary-color: #5f6368;
+            --background-color: #ffffff;
+            --text-color: #3c4043;
+            --accent-color: #1a73e8;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px 24px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+            border-bottom: 2px solid #f1f3f4;
+            padding-bottom: 16px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 12px;
+        }
+
+        p, li {
+            margin-bottom: 16px;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .last-updated {
+            color: var(--secondary-color);
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+
+        .highlight {
+            background-color: #e8f0fe;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+            font-weight: 500;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #f1f3f4;
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.25rem; }
+            .container { padding: 20px 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for Tube Traveller</h1>
+        <p class="last-updated">Last Updated: <span id="date"></span></p>
+
+        <div class="highlight">
+            <strong>Note:</strong> Tube Traveller is designed with "Privacy by Design" at its core. We do not collect, store, or transmit any of your personal data.
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>Welcome to <strong>Tube Traveller</strong>. We value your privacy and are committed to protecting it. This Privacy Policy explains our practices regarding the collection, use, and disclosure of information when you use our mobile application.</p>
+
+        <h2>2. Information Collection and Use</h2>
+        <p>Tube Traveller is designed to function entirely offline or with local data processing. We do not collect any personally identifiable information (PII), such as your name, email address, phone number, or precise location.</p>
+        <ul>
+            <li><strong>No Tracking:</strong> We do not use tracking technologies, cookies, or advertising IDs to monitor your behavior.</li>
+            <li><strong>No Third-Party Sharing:</strong> We do not sell, trade, or otherwise transfer your information to outside parties.</li>
+        </ul>
+
+        <h2>3. Local Data Storage</h2>
+        <p>The app uses the Android Jetpack <strong>Room</strong> library to store data (such as station information and user preferences) directly on your device.</p>
+        <ul>
+            <li>This data stays on your device and is not accessible to us or any third party.</li>
+            <li>You can clear this data at any time by reinstalling the app or clearing the app's storage in your device settings.</li>
+        </ul>
+
+        <h2>4. Third-Party Services</h2>
+        <p>Tube Traveller is built using standard Android and Google Jetpack libraries. While these libraries are used to provide core functionality, they do not grant us the ability to collect your personal data or transmit it to external servers.</p>
+
+        <h2>5. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page, and we will update the "Last Updated" date at the top of this document.</p>
+
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions or suggestions about our Privacy Policy, please contact us at:</p>
+        <p><strong>Hao Liang</strong><br>
+        Email: <strong>hliangdev@gmail.com</strong></p>
+
+        <footer>
+            &copy; <span id="year"></span> Tube Traveller. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        // Automatically sets the current date and year
+        const now = new Date();
+        document.getElementById('date').textContent = now.toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        });
+        document.getElementById('year').textContent = now.getFullYear();
+    </script>
+</body>
+</html>
